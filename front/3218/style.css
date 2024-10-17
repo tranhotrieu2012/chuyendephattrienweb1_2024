@@ -1,0 +1,47 @@
+body {
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table th, table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+table th {
+  background-color: #f9f9f9;
+  font-family: "Montserrat", sans-serif;
+}
+
+.pagination {
+  margin: 20px 0;
+  text-align: right;
+}
+.pagination a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #000;
+}
+.pagination a.active {
+  font-weight: bold;
+}
+
+.topic-title {
+  font-family: "Montserrat", sans-serif;
+}
+
+.topic-meta {
+  color: #666;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
