@@ -1,0 +1,186 @@
+// body {
+//     font-family: Arial, sans-serif;
+//     margin: 0;
+//     padding: 0;
+//     background-color: #f7f7f7;
+// }
+
+// .popular-products {
+//     width: 80%;
+//     margin: 0 auto;
+//     text-align: center;
+// }
+
+// .popular-products h2 {
+//     font-size: 24px;
+//     margin: 20px 0;
+// }
+
+// .products-container {
+//     display: flex;
+//     justify-content: space-between;
+//     flex-wrap: wrap;
+// }
+
+// .product {
+//     background-color: #fff;
+//     border: 1px solid #ddd;
+//     width: 23%;
+//     padding: 20px;
+//     margin-bottom: 20px;
+//     position: relative;
+//     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+// }
+
+// .product img {
+//     width: 100%;
+//     height: auto;
+// }
+
+// .product h3 {
+//     font-size: 18px;
+//     margin: 15px 0;
+// }
+
+// .price {
+//     font-size: 16px;
+//     margin: 10px 0;
+// }
+
+// .current-price {
+//     color: #f39c12;
+//     font-weight: bold;
+// }
+
+// .old-price {
+//     text-decoration: line-through;
+//     color: #999;
+//     margin-left: 10px;
+// }
+
+// .sale {
+//     background-color: #e74c3c;
+//     color: #fff;
+//     font-size: 12px;
+//     font-weight: bold;
+//     padding: 5px;
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+// }
+
+// .rating {
+//     font-size: 14px;
+//     color: #f1c40f;
+// }
+
+// .rating span {
+//     color: #555;
+//     margin-left: 10px;
+// }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  min-width: 540px;
+  color: #5e5c5c;
+}
+.popular-products {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  
+  .product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .pagination {
+      button {
+        background-color: white;
+        border: 0.5px solid #c4c1c1;
+        color: #c4c1c1;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+      }
+      button:hover {
+        background-color: #28abe3;
+        border: 0.5px solid #28abe3;
+        color: white;
+      }
+    }
+  }
+
+  .products-container {
+    display: flex;
+    gap: 1rem;
+    
+    .product {
+      border: 1px solid #e0dddd;
+      min-width: 280px;
+      width: 18%;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: 0.5s ease, box-shadow 0.5s ease;
+      .image-product {
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+      }
+      .detail-product {
+        .name-product {
+          font-size: 14px;
+          max-height: 20px;
+          width: 100%;
+        }
+        .price {
+          .current-price {
+            margin-right: 0.5rem;
+            font-weight: bold;
+            color: #f9b002;
+          }
+          .old-price {
+            text-decoration: line-through;
+          }
+        }
+        .rating {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .star {
+            font-size: 1.5rem;
+            border-radius: 50px;
+          }
+          .empty {
+            color: #f9b002;
+          }
+          .end {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    .product:hover {
+      transform: scale(1.05); 
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+      #image-one {
+        content: url("/images/faded-short-sleeves-tshirt.jpg");
+      }
+      #image-two {
+        content: url("/images/blouse.jpg");
+      }
+      #image-three {
+        content: url("/images/printed-dress.jpg");
+      }
+      #image-four {
+        content: url("/images/printed-dress\ \(3\).jpg");
+      }
+    }
+  }
+}
